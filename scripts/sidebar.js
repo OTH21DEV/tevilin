@@ -15,6 +15,7 @@ export function initSidebarMenu() {
       section.classList.add("active");
       section.style.display = "flex";
       section.style.flexDirection = "column";
+      section.style.flexGrow="1"
     } else {
       section.classList.remove("active");
       section.style.display = "none";
@@ -33,6 +34,7 @@ function updateDisplayedContent(targetLink) {
       section.classList.add("active");
       section.style.display = "flex";
       section.style.flexDirection = "column";
+      section.style.flexGrow="1"
     } else {
       section.classList.remove("active");
       section.style.display = "none";

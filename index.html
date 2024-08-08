@@ -164,158 +164,155 @@
         <h2>Настройка полей таблицы</h2>
         <!-- Table -->
 
-  <table class="settings__table">
-    <thead class="settings__table-head">
-      <tr class="settings__table-row">
-        <th class="settings__table-cell settings__table-cell--header-empty"></th>
-        <th class="settings__table-cell settings__table-cell--description">Описание</th>
-        <th class="settings__table-cell settings__table-cell--sorting">Сортировка</th>
-        <th class="settings__table-cell settings__table-cell--id">ID</th>
-        <th class="settings__table-cell settings__table-cell--field-type">Тип поля</th>
-        <th class="settings__table-cell settings__table-cell--display-in-table">Выводить в таблицу</th>
-        <th class="settings__table-cell settings__table-cell--mandatory">Обязательно</th>
-        <th class="settings__table-cell settings__table-cell--delete">Удалить</th>
-      </tr>
-    </thead>
-    <tbody class="settings__table-body">
-      <tr class="settings__table-row">
-        <td class="settings__table-cell settings__table-cell--name">
-          <img src="./assets/deco_icon.png" alt="" />
-          <p>Название</p>
-          <img src="./assets/change_icon.png" alt="" />
-        </td>
-        <td class="settings__table-cell settings__table-cell--help-icon-1"><img src="./assets/help_icon.png" alt="" /></td>
-        <td class="settings__table-cell settings__table-cell--sorting-1">500</td>
-        <td class="settings__table-cell settings__table-cell--id-1">1001</td>
-        <td class="settings__table-cell settings__table-cell--field-type-1">Строка</td>
-        <td class="settings__table-cell settings__table-cell--display-in-table-1"><img src="./assets/checkbox_icon.png" alt="" /></td>
-        <td class="settings__table-cell settings__table-cell--mandatory-1"><img src="./assets/checkbox_icon.png" alt="" /></td>
-        <td class="settings__table-cell settings__table-cell--delete-1"></td>
-      </tr>
-      <tr class="settings__table-row">
-        <td class="settings__table-cell settings__table-cell--price">
-          <img src="./assets/deco_icon.png" alt="" />
-          <p>Цена</p>
-          <img src="./assets/change_icon.png" alt="" />
-        </td>
-        <td class=""></td>
-        <td class="settings__table-cell settings__table-cell--sorting-2">510</td>
-        <td class="settings__table-cell settings__table-cell--id-2">1002</td>
-        <td class="settings__table-cell settings__table-cell--field-type-2">Число</td>
-        <td class="settings__table-cell settings__table-cell--display-in-table-2"><img src="./assets/checkbox_icon.png" alt="" /></td>
-        <td class="settings__table-cell settings__table-cell--mandatory-2"><img src="./assets/checkbox_icon.png" alt="" /></td>
-        <td class="settings__table-cell settings__table-cell--delete-2"><img src="./assets/checkbox_icon.png" alt="" /></td>
-      </tr>
-      <!-- Repeat similar structure but with unique class names for every row and cell -->
-      <tr class="settings__table-row">
-        <td class="settings__table-cell settings__table-cell--mol">
-          <img src="./assets/deco_icon.png" alt="" />
-          <p>МОЛ</p>
-          <img src="./assets/change_icon.png" alt="" />
-        </td>
-        <td class=""></td>
-        <td class="settings__table-cell settings__table-cell--sorting-3">520</td>
-        <td class="settings__table-cell settings__table-cell--id-3">1003</td>
-        <td class="settings__table-cell settings__table-cell--field-type-3">
-          <p>Справочник</p>
-          <img src="./assets/file_icon.png" alt="" />
-        </td>
-        <td class="settings__table-cell settings__table-cell--display-in-table-3"><img src="./assets/checkbox_icon.png" alt="" /></td>
-        <td class="settings__table-cell settings__table-cell--mandatory-3"><img src="./assets/checkbox_icon.png" alt="" /></td>
-        <td class="settings__table-cell settings__table-cell--delete-3"><img src="./assets/checkbox_unset_icon.png" alt="" /></td>
-      </tr>
-      <tr class="settings__table-row">
-        <td class="settings__table-cell settings__table-cell--photo">
-          <img src="./assets/deco_icon.png" alt="" />
-          <p>Фото</p>
-          <img src="./assets/change_icon.png" alt="" />
-        </td>
-        <td class=""></td>
-        <td class="settings__table-cell settings__table-cell--sorting-4">530</td>
-        <td class="settings__table-cell settings__table-cell--id-4">1004</td>
-        <td class="settings__table-cell settings__table-cell--field-type-4">Файл</td>
-        <td class="settings__table-cell settings__table-cell--display-in-table-4"><img src="./assets/checkbox_icon.png" alt="" /></td>
-        <td class="settings__table-cell settings__table-cell--mandatory-4"><img src="./assets/checkbox_icon.png" alt="" /></td>
-        <td class="settings__table-cell settings__table-cell--delete-4"><img src="./assets/checkbox_unset_icon.png" alt="" /></td>
-      </tr>
-      <tr class="settings__table-row">
-        <td class="settings__table-cell settings__table-cell--color">
-          <img src="./assets/deco_icon.png" alt="" />
-          <p>Цвет</p>
-          <img src="./assets/change_icon.png" alt="" />
-        </td>
-        <td class=""></td>
-        <td class="settings__table-cell settings__table-cell--sorting-5">540</td>
-        <td class="settings__table-cell settings__table-cell--id-5">1005</td>
-        <td class="settings__table-cell settings__table-cell--field-type-5">Строка</td>
-        <td class="settings__table-cell settings__table-cell--display-in-table-5"><img src="./assets/checkbox_icon.png" alt="" /></td>
-        <td class="settings__table-cell settings__table-cell--mandatory-5"><img src="./assets/checkbox_icon.png" alt="" /></td>
-        <td class="settings__table-cell settings__table-cell--delete-5"><img src="./assets/checkbox_unset_icon.png" alt="" /></td>
-      </tr>
-      <tr class="settings__table-row">
-        <td class="settings__table-cell settings__table-cell--location">
-          <img src="./assets/deco_icon.png" alt="" />
-          <p>Локация</p>
-          <img src="./assets/change_icon.png" alt="" />
-        </td>
-        <td class=""></td>
-        <td class="settings__table-cell settings__table-cell--sorting-6">550</td>
-        <td class="settings__table-cell settings__table-cell--id-6">1006</td>
-        <td class="settings__table-cell settings__table-cell--field-type-6">
-          <p>Справочник</p>
-          <img src="./assets/file_icon.png" alt="" />
-        </td>
-        <td class="settings__table-cell settings__table-cell--display-in-table-6"><img src="./assets/checkbox_icon.png" alt="" /></td>
-        <td class="settings__table-cell settings__table-cell--mandatory-6"><img src="./assets/checkbox_icon.png" alt="" /></td>
-        <td class="settings__table-cell settings__table-cell--delete-6"><img src="./assets/checkbox_unset_icon.png" alt="" /></td>
-      </tr>
-      <tr class="settings__table-row">
-        <td class="settings__table-cell settings__table-cell--quantity">
-          <img src="./assets/deco_icon.png" alt="" />
-          <p>Количество</p>
-          <img src="./assets/change_icon.png" alt="" />
-        </td>
-        <td class=""></td>
-        <td class="settings__table-cell settings__table-cell--sorting-7">560</td>
-        <td class="settings__table-cell settings__table-cell--id-7">1007</td>
-        <td class="settings__table-cell settings__table-cell--field-type-7">Число</td>
-        <td class="settings__table-cell settings__table-cell--display-in-table-7"><img src="./assets/checkbox_icon.png" alt="" /></td>
-        <td class="settings__table-cell settings__table-cell--mandatory-7"><img src="./assets/checkbox_icon.png" alt="" /></td>
-        <td class="settings__table-cell settings__table-cell--delete-7"><img src="./assets/checkbox_unset_icon.png" alt="" /></td>
-      </tr>
-      <tr class="settings__table-row">
-        
-        <td class="settings__table-cell settings__table-cell--description-2">
-          <img src="./assets/deco_icon.png" alt="" />
-          <p>Описание</p>
-          <img src="./assets/change_icon.png" alt="" />
-        </td>
-        <td class=""></td>
-        <td class="settings__table-cell settings__table-cell--sorting-8">570</td>
-        <td class="settings__table-cell settings__table-cell--id-8">1008</td>
-        <td class="settings__table-cell settings__table-cell--field-type-8">Текст</td>
-        <td class="settings__table-cell settings__table-cell--display-in-table-8"><img src="./assets/checkbox_icon.png" alt="" /></td>
-        <td class="settings__table-cell settings__table-cell--mandatory-8"><img src="./assets/checkbox_icon.png" alt="" /></td>
-        <td class="settings__table-cell settings__table-cell--delete-8"><img src="./assets/checkbox_unset_icon.png" alt="" /></td>
-      </tr>
-      <tr class="settings__table-row">
-        <td class="settings__table-cell settings__table-cell--quantity-2">
-          <img src="./assets/deco_icon.png" alt="" />
-          <p>Количество</p>
-          <img src="./assets/change_icon.png" alt="" />
-        </td>
-        <td class=""></td>
-        <td class="settings__table-cell settings__table-cell--sorting-9">580</td>
-        <td class="settings__table-cell settings__table-cell--id-9">1009</td>
-        <td class="settings__table-cell settings__table-cell--field-type-9">Число</td>
-        <td class="settings__table-cell settings__table-cell--display-in-table-9"><img src="./assets/checkbox_icon.png" alt="" /></td>
-        <td class="settings__table-cell settings__table-cell--mandatory-9"><img src="./assets/checkbox_icon.png" alt="" /></td>
-        <td class="settings__table-cell settings__table-cell--delete-9"><img src="./assets/checkbox_unset_icon.png" alt="" /></td>
-      </tr>
-    </tbody>
-  </table>
-
-
+        <table class="settings__table">
+          <thead class="settings__table-head">
+            <tr class="settings__table-row">
+              <th class="settings__table-cell settings__table-cell--header-empty"></th>
+              <th class="settings__table-cell settings__table-cell--description">Описание</th>
+              <th class="settings__table-cell settings__table-cell--sorting">Сортировка</th>
+              <th class="settings__table-cell settings__table-cell--id">ID</th>
+              <th class="settings__table-cell settings__table-cell--field-type">Тип поля</th>
+              <th class="settings__table-cell settings__table-cell--display-in-table">Выводить в таблицу</th>
+              <th class="settings__table-cell settings__table-cell--mandatory">Обязательно</th>
+              <th class="settings__table-cell settings__table-cell--delete">Удалить</th>
+            </tr>
+          </thead>
+          <tbody class="settings__table-body">
+            <tr class="settings__table-row">
+              <td class="settings__table-cell settings__table-cell--name">
+                <img src="./assets/deco_icon.png" alt="" />
+                <p>Название</p>
+                <img src="./assets/change_icon.png" alt="" />
+              </td>
+              <td class="settings__table-cell settings__table-cell--help-icon-1"><img src="./assets/help_icon.png" alt="" /></td>
+              <td class="settings__table-cell settings__table-cell--sorting-1">500</td>
+              <td class="settings__table-cell settings__table-cell--id-1">1001</td>
+              <td class="settings__table-cell settings__table-cell--field-type-1">Строка</td>
+              <td class="settings__table-cell settings__table-cell--display-in-table-1"><img src="./assets/checkbox_icon.png" alt="" /></td>
+              <td class="settings__table-cell settings__table-cell--mandatory-1"><img src="./assets/checkbox_icon.png" alt="" /></td>
+              <td class="settings__table-cell settings__table-cell--delete-1"></td>
+            </tr>
+            <tr class="settings__table-row">
+              <td class="settings__table-cell settings__table-cell--price">
+                <img src="./assets/deco_icon.png" alt="" />
+                <p>Цена</p>
+                <img src="./assets/change_icon.png" alt="" />
+              </td>
+              <td class=""></td>
+              <td class="settings__table-cell settings__table-cell--sorting-2">510</td>
+              <td class="settings__table-cell settings__table-cell--id-2">1002</td>
+              <td class="settings__table-cell settings__table-cell--field-type-2">Число</td>
+              <td class="settings__table-cell settings__table-cell--display-in-table-2"><img src="./assets/checkbox_icon.png" alt="" /></td>
+              <td class="settings__table-cell settings__table-cell--mandatory-2"><img src="./assets/checkbox_icon.png" alt="" /></td>
+              <td class="settings__table-cell settings__table-cell--delete-2"><img src="./assets/checkbox_icon.png" alt="" /></td>
+            </tr>
+            <!-- Repeat similar structure but with unique class names for every row and cell -->
+            <tr class="settings__table-row">
+              <td class="settings__table-cell settings__table-cell--mol">
+                <img src="./assets/deco_icon.png" alt="" />
+                <p>МОЛ</p>
+                <img src="./assets/change_icon.png" alt="" />
+              </td>
+              <td class=""></td>
+              <td class="settings__table-cell settings__table-cell--sorting-3">520</td>
+              <td class="settings__table-cell settings__table-cell--id-3">1003</td>
+              <td class="settings__table-cell settings__table-cell--field-type-3">
+                <p>Справочник</p>
+                <img src="./assets/file_icon.png" alt="" />
+              </td>
+              <td class="settings__table-cell settings__table-cell--display-in-table-3"><img src="./assets/checkbox_icon.png" alt="" /></td>
+              <td class="settings__table-cell settings__table-cell--mandatory-3"><img src="./assets/checkbox_icon.png" alt="" /></td>
+              <td class="settings__table-cell settings__table-cell--delete-3"><img src="./assets/checkbox_unset_icon.png" alt="" /></td>
+            </tr>
+            <tr class="settings__table-row">
+              <td class="settings__table-cell settings__table-cell--photo">
+                <img src="./assets/deco_icon.png" alt="" />
+                <p>Фото</p>
+                <img src="./assets/change_icon.png" alt="" />
+              </td>
+              <td class=""></td>
+              <td class="settings__table-cell settings__table-cell--sorting-4">530</td>
+              <td class="settings__table-cell settings__table-cell--id-4">1004</td>
+              <td class="settings__table-cell settings__table-cell--field-type-4">Файл</td>
+              <td class="settings__table-cell settings__table-cell--display-in-table-4"><img src="./assets/checkbox_icon.png" alt="" /></td>
+              <td class="settings__table-cell settings__table-cell--mandatory-4"><img src="./assets/checkbox_icon.png" alt="" /></td>
+              <td class="settings__table-cell settings__table-cell--delete-4"><img src="./assets/checkbox_unset_icon.png" alt="" /></td>
+            </tr>
+            <tr class="settings__table-row">
+              <td class="settings__table-cell settings__table-cell--color">
+                <img src="./assets/deco_icon.png" alt="" />
+                <p>Цвет</p>
+                <img src="./assets/change_icon.png" alt="" />
+              </td>
+              <td class=""></td>
+              <td class="settings__table-cell settings__table-cell--sorting-5">540</td>
+              <td class="settings__table-cell settings__table-cell--id-5">1005</td>
+              <td class="settings__table-cell settings__table-cell--field-type-5">Строка</td>
+              <td class="settings__table-cell settings__table-cell--display-in-table-5"><img src="./assets/checkbox_icon.png" alt="" /></td>
+              <td class="settings__table-cell settings__table-cell--mandatory-5"><img src="./assets/checkbox_icon.png" alt="" /></td>
+              <td class="settings__table-cell settings__table-cell--delete-5"><img src="./assets/checkbox_unset_icon.png" alt="" /></td>
+            </tr>
+            <tr class="settings__table-row">
+              <td class="settings__table-cell settings__table-cell--location">
+                <img src="./assets/deco_icon.png" alt="" />
+                <p>Локация</p>
+                <img src="./assets/change_icon.png" alt="" />
+              </td>
+              <td class=""></td>
+              <td class="settings__table-cell settings__table-cell--sorting-6">550</td>
+              <td class="settings__table-cell settings__table-cell--id-6">1006</td>
+              <td class="settings__table-cell settings__table-cell--field-type-6">
+                <p>Справочник</p>
+                <img src="./assets/file_icon.png" alt="" />
+              </td>
+              <td class="settings__table-cell settings__table-cell--display-in-table-6"><img src="./assets/checkbox_icon.png" alt="" /></td>
+              <td class="settings__table-cell settings__table-cell--mandatory-6"><img src="./assets/checkbox_icon.png" alt="" /></td>
+              <td class="settings__table-cell settings__table-cell--delete-6"><img src="./assets/checkbox_unset_icon.png" alt="" /></td>
+            </tr>
+            <tr class="settings__table-row">
+              <td class="settings__table-cell settings__table-cell--quantity">
+                <img src="./assets/deco_icon.png" alt="" />
+                <p>Количество</p>
+                <img src="./assets/change_icon.png" alt="" />
+              </td>
+              <td class=""></td>
+              <td class="settings__table-cell settings__table-cell--sorting-7">560</td>
+              <td class="settings__table-cell settings__table-cell--id-7">1007</td>
+              <td class="settings__table-cell settings__table-cell--field-type-7">Число</td>
+              <td class="settings__table-cell settings__table-cell--display-in-table-7"><img src="./assets/checkbox_icon.png" alt="" /></td>
+              <td class="settings__table-cell settings__table-cell--mandatory-7"><img src="./assets/checkbox_icon.png" alt="" /></td>
+              <td class="settings__table-cell settings__table-cell--delete-7"><img src="./assets/checkbox_unset_icon.png" alt="" /></td>
+            </tr>
+            <tr class="settings__table-row">
+              <td class="settings__table-cell settings__table-cell--description-2">
+                <img src="./assets/deco_icon.png" alt="" />
+                <p>Описание</p>
+                <img src="./assets/change_icon.png" alt="" />
+              </td>
+              <td class=""></td>
+              <td class="settings__table-cell settings__table-cell--sorting-8">570</td>
+              <td class="settings__table-cell settings__table-cell--id-8">1008</td>
+              <td class="settings__table-cell settings__table-cell--field-type-8">Текст</td>
+              <td class="settings__table-cell settings__table-cell--display-in-table-8"><img src="./assets/checkbox_icon.png" alt="" /></td>
+              <td class="settings__table-cell settings__table-cell--mandatory-8"><img src="./assets/checkbox_icon.png" alt="" /></td>
+              <td class="settings__table-cell settings__table-cell--delete-8"><img src="./assets/checkbox_unset_icon.png" alt="" /></td>
+            </tr>
+            <tr class="settings__table-row">
+              <td class="settings__table-cell settings__table-cell--quantity-2">
+                <img src="./assets/deco_icon.png" alt="" />
+                <p>Количество</p>
+                <img src="./assets/change_icon.png" alt="" />
+              </td>
+              <td class=""></td>
+              <td class="settings__table-cell settings__table-cell--sorting-9">580</td>
+              <td class="settings__table-cell settings__table-cell--id-9">1009</td>
+              <td class="settings__table-cell settings__table-cell--field-type-9">Число</td>
+              <td class="settings__table-cell settings__table-cell--display-in-table-9"><img src="./assets/checkbox_icon.png" alt="" /></td>
+              <td class="settings__table-cell settings__table-cell--mandatory-9"><img src="./assets/checkbox_icon.png" alt="" /></td>
+              <td class="settings__table-cell settings__table-cell--delete-9"><img src="./assets/checkbox_unset_icon.png" alt="" /></td>
+            </tr>
+          </tbody>
+        </table>
       </section>
     </main>
 

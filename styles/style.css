@@ -460,6 +460,7 @@ Table
   padding-top: 28px;
   flex-grow: 1;
   border-collapse: collapse;
+  margin-bottom:18px
 }
 .settings__table-cell--name,
 .settings__table-cell--price,
@@ -474,6 +475,58 @@ Table
   align-items: center;
   height: 60px;
   padding-left: 30px;
+}
+.settings__table-cell--name p,
+.settings__table-cell--price p,
+.settings__table-cell--mol p,
+.settings__table-cell--photo p,
+.settings__table-cell--color p,
+.settings__table-cell--location p,
+.settings__table-cell--quantity p,
+.settings__table-cell--description-2 p,
+.settings__table-cell--quantity-2 p {
+  padding: 0 10px;
+}
+
+.settings__table-cell--description,
+.settings__table-cell--sorting,
+.settings__table-cell--id,
+.settings__table-cell--field-type,
+.settings__table-cell--display-in-table,
+.settings__table-cell--mandatory,
+.settings__table-cell--delete {
+  font-family: var(--secondary-font);
+  font-weight: var(--font-weight-light);
+  font-size: 13px;
+  text-align: start;
+  padding-left: 9px;
+}
+.settings__table-cell--header-empty{
+  width:
+}
+.settings__table-cell--description{
+  width:104px;
+}
+.settings__table-cell--sorting{
+  width:173px;
+}
+
+.settings__table-cell--id{
+  width:152px;
+}
+.settings__table-cell--field-type{
+  width: 206px;
+}
+
+.settings__table-cell--display-in-table{
+  width: 206px;
+}
+.settings__table-cell--mandatory{
+  width: 168px;
+}
+
+.settings__table-cell--delete {
+  width: 116px;
 }
 
 .settings__table-cell--name img:nth-of-type(1),
@@ -556,19 +609,24 @@ Table
   display: flex;
   align-items: center;
 }
-.settings__table-cell--field-type-3 img,
-.settings__table-cell--field-type-6 img {
-  width: 24px;
-  height: 24px;
-}
 
 .settings__table-cell--help-icon-1 img {
   width: 24px;
   height: 24px;
 }
 
-.settings__table-cell p {
+/* .settings__table-cell p {
   padding: 0 10px;
+} */
+.settings__table-cell--field-type-3 img,
+.settings__table-cell--field-type-6 img {
+  width: 24px;
+  height: 24px;
+  margin-left: 6px;
+}
+.settings__table-cell--field-type-3,
+.settings__table-cell--field-type-6 {
+  padding-left: 0;
 }
 .settings__table-body .settings__table-row:nth-child(odd) {
   background-color: var(--secondary-bg);
@@ -576,8 +634,7 @@ Table
 }
 
 .settings__table-cell {
-  
-  padding-left:30px;
+  /* padding-left: 30px; */
   overflow: hidden;
 }
 
