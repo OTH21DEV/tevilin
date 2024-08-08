@@ -78,7 +78,7 @@ Main Content Sections
 */
 .main-content {
   background-color: var(--main-bg);
-  min-height: 100vh;
+  /* min-height: 100vh; */
   padding: 30px 30px 0 0;
   display: flex;
 }
@@ -166,9 +166,11 @@ Localisation section
 
 .localisation__title,
 .settings__title {
-  font-family: var(--heading-font-bold);
+  font-family: var(--heading-font);
   font-size: var(--font-size-xl);
-  color: --heading-text-color;
+  font-weight: var(--font-weight-bolder);
+
+  color: var(--heading-text-color);
   display: flex;
   align-items: center;
   height: 32px;
@@ -264,7 +266,7 @@ Localisation section
   border-radius: 5px;
   text-transform: uppercase;
   font-family: var(--heading-font);
-  font-weight: bold;
+  /* font-weight: bold; */
   font-size: var(--font-size-xs);
   letter-spacing: 2px;
   display: flex;
@@ -274,9 +276,12 @@ Localisation section
 }
 .btn-sync {
   width: 336px;
+  font-weight: bold;
 }
 .btn.btn-sync img,
-.btn.btn-create img {
+.btn.btn-create img,
+.btn.btn-add-table-field img,
+.btn.btn-save-footer img {
   padding-right: 10px;
 }
 .btn.btn-sync span {
@@ -458,9 +463,9 @@ Table
 */
 .settings__table {
   padding-top: 28px;
-  flex-grow: 1;
+  /* flex-grow: 1; */
   border-collapse: collapse;
-  margin-bottom:18px
+  margin-bottom: 18px;
 }
 .settings__table-cell--name,
 .settings__table-cell--price,
@@ -476,6 +481,10 @@ Table
   height: 60px;
   padding-left: 30px;
 }
+/**/
+
+/**/
+
 .settings__table-cell--name p,
 .settings__table-cell--price p,
 .settings__table-cell--mol p,
@@ -501,27 +510,27 @@ Table
   text-align: start;
   padding-left: 9px;
 }
-.settings__table-cell--header-empty{
-  width:
+.settings__table-cell--header-empty {
+  /* width: ; */
 }
-.settings__table-cell--description{
-  width:104px;
+.settings__table-cell--description {
+  width: 104px;
 }
-.settings__table-cell--sorting{
-  width:173px;
+.settings__table-cell--sorting {
+  width: 173px;
 }
 
-.settings__table-cell--id{
-  width:152px;
+.settings__table-cell--id {
+  width: 152px;
 }
-.settings__table-cell--field-type{
+.settings__table-cell--field-type {
   width: 206px;
 }
 
-.settings__table-cell--display-in-table{
+.settings__table-cell--display-in-table {
   width: 206px;
 }
-.settings__table-cell--mandatory{
+.settings__table-cell--mandatory {
   width: 168px;
 }
 
@@ -582,9 +591,7 @@ Table
   font-weight: var(--font-weight-bold);
   color: var(--heading-text-color);
 }
-.settings__table-row {
-  height: 60px;
-}
+
 .settings__table-cell--sorting-1,
 .settings__table-cell--sorting-2,
 .settings__table-cell--sorting-3,
@@ -615,9 +622,6 @@ Table
   height: 24px;
 }
 
-/* .settings__table-cell p {
-  padding: 0 10px;
-} */
 .settings__table-cell--field-type-3 img,
 .settings__table-cell--field-type-6 img {
   width: 24px;
@@ -630,12 +634,18 @@ Table
 }
 .settings__table-body .settings__table-row:nth-child(odd) {
   background-color: var(--secondary-bg);
-  border-radius: 5px;
+  height: 60px;
+}
+.settings__table-body .settings__table-row:nth-child(even) {
+  background-color: none;
+  height: 60px;
+}
+.settings__table-cell {
+  overflow: hidden;
 }
 
-.settings__table-cell {
-  /* padding-left: 30px; */
-  overflow: hidden;
+.settings__table-row {
+  height: 60px;
 }
 
 .settings__table-cell:first-child {
@@ -647,7 +657,35 @@ Table
   border-top-right-radius: 5px;
   border-bottom-right-radius: 5px;
 }
+.settings__table-head {
+  height: auto;
+}
+/* .settings__table-body .settings__table-row.group-start {
+  background-color: var(--secondary-bg);
+  height: 60px;
+}
 
+.settings__table-body .settings__table-row:not(.group-start) {
+  background-color: none;
+  height: 60px;
+} */
+
+/* #thead{
+  height:60px
+} */
+
+.settings__subheading__title {
+  font-family: var(--heading-font);
+  font-size: var(--font-size-xl);
+  font-weight: var(--font-weight-bolder);
+  color: var(--heading-text-color);
+}
+
+.btn-add-table-field {
+  width: 255px;
+  height: 50px;
+  margin-bottom: 70px;
+}
 /*
 Footer Section
 */
@@ -656,6 +694,7 @@ Footer Section
   display: flex;
   justify-content: center;
   align-items: center;
+
 }
 .footer__section {
   display: flex;
@@ -693,4 +732,15 @@ Footer Section
   position: absolute;
   bottom: 0;
   border-bottom: 1.5px solid var(--accent-text-color);
+}
+.btn-save-footer,
+.btn-cancel-footer {
+  width: 198.42px;
+  height: 50px;
+}
+.btn-cancel-footer {
+  background-color: var(--secondary-bg);
+  border: 1px solid var(--primary-text-color);
+  color: var(--primary-text-color);
+  margin-left: 20px;
 }

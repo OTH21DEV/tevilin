@@ -161,12 +161,12 @@
           <li class="settings__item">Справочники</li>
           <li class="settings__item">Пользователь</li>
         </ul>
-        <h2>Настройка полей таблицы</h2>
+        <h2 class="settings__subheading__title" >Настройка полей таблицы</h2>
         <!-- Table -->
 
         <table class="settings__table">
-          <thead class="settings__table-head">
-            <tr class="settings__table-row">
+          <thead class="settings__table-head ">
+            <tr class="settings__table-row" id="thead">
               <th class="settings__table-cell settings__table-cell--header-empty"></th>
               <th class="settings__table-cell settings__table-cell--description">Описание</th>
               <th class="settings__table-cell settings__table-cell--sorting">Сортировка</th>
@@ -178,7 +178,7 @@
             </tr>
           </thead>
           <tbody class="settings__table-body">
-            <tr class="settings__table-row">
+            <tr class="settings__table-row group-start">
               <td class="settings__table-cell settings__table-cell--name">
                 <img src="./assets/deco_icon.png" alt="" />
                 <p>Название</p>
@@ -207,7 +207,7 @@
               <td class="settings__table-cell settings__table-cell--delete-2"><img src="./assets/checkbox_icon.png" alt="" /></td>
             </tr>
             <!-- Repeat similar structure but with unique class names for every row and cell -->
-            <tr class="settings__table-row">
+            <tr class="settings__table-row group-start">
               <td class="settings__table-cell settings__table-cell--mol">
                 <img src="./assets/deco_icon.png" alt="" />
                 <p>МОЛ</p>
@@ -238,7 +238,7 @@
               <td class="settings__table-cell settings__table-cell--mandatory-4"><img src="./assets/checkbox_icon.png" alt="" /></td>
               <td class="settings__table-cell settings__table-cell--delete-4"><img src="./assets/checkbox_unset_icon.png" alt="" /></td>
             </tr>
-            <tr class="settings__table-row">
+            <tr class="settings__table-row group-start">
               <td class="settings__table-cell settings__table-cell--color">
                 <img src="./assets/deco_icon.png" alt="" />
                 <p>Цвет</p>
@@ -269,7 +269,7 @@
               <td class="settings__table-cell settings__table-cell--mandatory-6"><img src="./assets/checkbox_icon.png" alt="" /></td>
               <td class="settings__table-cell settings__table-cell--delete-6"><img src="./assets/checkbox_unset_icon.png" alt="" /></td>
             </tr>
-            <tr class="settings__table-row">
+            <tr class="settings__table-row group-start">
               <td class="settings__table-cell settings__table-cell--quantity">
                 <img src="./assets/deco_icon.png" alt="" />
                 <p>Количество</p>
@@ -297,7 +297,7 @@
               <td class="settings__table-cell settings__table-cell--mandatory-8"><img src="./assets/checkbox_icon.png" alt="" /></td>
               <td class="settings__table-cell settings__table-cell--delete-8"><img src="./assets/checkbox_unset_icon.png" alt="" /></td>
             </tr>
-            <tr class="settings__table-row">
+            <tr class="settings__table-row group-start">
               <td class="settings__table-cell settings__table-cell--quantity-2">
                 <img src="./assets/deco_icon.png" alt="" />
                 <p>Количество</p>
@@ -313,6 +313,11 @@
             </tr>
           </tbody>
         </table>
+
+        <button class="btn btn-add-table-field">
+          <img src="./assets/add_icon.png" alt="" />
+          Добавить поле
+        </button>
       </section>
     </main>
 
