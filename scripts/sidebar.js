@@ -13,7 +13,8 @@ export function initSidebarMenu() {
   contentSections.forEach((section) => {
     if (section.id === "localisation") {
       section.classList.add("active");
-      section.style.display = "block";
+      section.style.display = "flex";
+      section.style.flexDirection = "column";
     } else {
       section.classList.remove("active");
       section.style.display = "none";
@@ -30,7 +31,8 @@ function updateDisplayedContent(targetLink) {
   contentSections.forEach((section) => {
     if (section.id === contentId) {
       section.classList.add("active");
-      section.style.display = "block";
+      section.style.display = "flex";
+      section.style.flexDirection = "column";
     } else {
       section.classList.remove("active");
       section.style.display = "none";
