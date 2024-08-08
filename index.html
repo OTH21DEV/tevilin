@@ -40,11 +40,11 @@
           <li class="sidebar__item">
             <a class="sidebar__link" href="#"> <img src="./assets/bell_icon.png" class="sidebar__icon" alt="Уведомления" /> Уведомления </a>
           </li>
-          <li class="sidebar__item">
-            <a class="sidebar__link" href="#"> <img src="./assets/map_icon.png" class="sidebar__icon" alt="Локации" /> Локации </a>
+          <li class="sidebar__item active">
+            <a class="sidebar__link" href="#" data-content="localisation"> <img src="./assets/map_icon.png" class="sidebar__icon" alt="Локации"   /> Локации </a>
           </li>
           <li class="sidebar__item">
-            <a class="sidebar__link" href="#"> <img src="./assets/settings_icon.png" class="sidebar__icon" alt="Настройки" /> Настройки </a>
+            <a class="sidebar__link" href="#" data-content="settings" > <img src="./assets/settings_icon.png" class="sidebar__icon" alt="Настройки"  /> Настройки </a>
           </li>
         </ul>
         <div class="sidebar__toggle">
@@ -55,11 +55,11 @@
 
       <!-- Localosation Section -->
 
-      <section class="localisation">
+      <section class="localisation active" id="localisation">
         <h1 class="localisation__title">Локации <span class="localisation__separator">/</span> Все локации</h1>
         <div class="localisation__controls">
           <ul class="localisation__menu">
-            <li class="localisation__item">Все локации</li>
+            <li class="localisation__item active">Все локации</li>
             <li class="localisation__item">Импорт<span>/</span>Экспорт</li>
             <li class="localisation__item">Настройки</li>
           </ul>
@@ -150,16 +150,19 @@
           </div>
         </div>
       </section>
+
+
+ <!-- Settings Section -->
+ <section class="settings" id="settings">
+  <h1 class="settings__title">Настройки</h1>
+
+</section>
+
     </main>
 
     <!-- Footer Section -->
     <footer class="footer">
-      <p class="footer__content">
-        Последний приём 20.09.2021 18:36:21
-      </p>
-      <p class="footer__content">
-        Последняя передача  20.09.2021 18:38:21
-      </p>
+
     </footer>
 
     <script type="module" src="./index.js"></script>
