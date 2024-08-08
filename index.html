@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Тестовый лендинг для Международного васюкинского турнира по шахматам." />
+    <title>Тестовый лендинг</title>
+    <link rel="stylesheet" href="./styles/style.css" />
+
+    <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="./assets/favicon-16x16.png" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Golos+Text:wght@400..900&family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <!-- Main Header Section -->
+    <header class="site-header">
+      <img src="./assets/logo.png" class="site-header__logo" alt="Лого галстук" />
+      <img src="./assets/logout.png" class="site-header__logout-icon" alt="Выйти" />
+    </header>
+
+    <!-- Main Content Sections -->
+    <main class="main-content">
+      <!-- Sidebar section -->
+      <aside class="sidebar">
+        <ul class="sidebar__menu">
+          <li class="sidebar__item">
+            <a class="sidebar__link" href="#"> <img src="./assets/property_icon.png" class="sidebar__icon" alt="Имущество" /> Имущество </a>
+          </li>
+          <li class="sidebar__item">
+            <a class="sidebar__link" href="#"> <img src="./assets/inventory_icon.png" class="sidebar__icon" alt="Инвентаризация" /> Инвентаризация </a>
+          </li>
+          <li class="sidebar__item">
+            <a class="sidebar__link" href="#"> <img src="./assets/team_icon.png" class="sidebar__icon" alt="Сотрудники" /> Сотрудники </a>
+          </li>
+          <li class="sidebar__item">
+            <a class="sidebar__link" href="#"> <img src="./assets/bell_icon.png" class="sidebar__icon" alt="Уведомления" /> Уведомления </a>
+          </li>
+          <li class="sidebar__item">
+            <a class="sidebar__link" href="#"> <img src="./assets/map_icon.png" class="sidebar__icon" alt="Локации" /> Локации </a>
+          </li>
+          <li class="sidebar__item">
+            <a class="sidebar__link" href="#"> <img src="./assets/settings_icon.png" class="sidebar__icon" alt="Настройки" /> Настройки </a>
+          </li>
+        </ul>
+        <div class="sidebar__toggle">
+          <img src="./assets/arrow_hide.png" class="sidebar__toggle-icon" alt="Скрыть меню" />
+          <p class="sidebar__toggle-text">Скрыть меню</p>
+        </div>
+      </aside>
+
+      <!-- Localosation Section -->
+
+      <section class="localisation">
+        <h1 class="localisation__title">Локации <span class="localisation__separator">/</span> Все локации</h1>
+        <div class="localisation__controls">
+          <ul class="localisation__menu">
+            <li class="localisation__item">Все локации</li>
+            <li class="localisation__item">Импорт<span>/</span>Экспорт</li>
+            <li class="localisation__item">Настройки</li>
+          </ul>
+          <button class="btn btn-sync">
+            <img src="./assets/synchro_icon.png" alt="Sync Icon" />
+            синхронизация
+            <span>(17.05.2024 15:23:21)</span>
+          </button>
+        </div>
+        <div class="localisation__actions">
+          <button class="btn btn-create">
+            <img src="./assets/add_icon.png" alt="" />
+            Создать локацию
+          </button>
+          <div class="localisation__search">
+            <div class="localisation__search-option">
+              <img src="./assets/checkbox_icon.png" alt="" />
+              <p class="localisation__search-text">Поиск по точному вхождению</p>
+            </div>
+            <input type="search" class="search-input" placeholder="поиск" />
+          </div>
+        </div>
+        <!-- Custom dropdown Section -->
+        <div class="custom-select-wrapper">
+          <div id="custom-dropdown" class="custom-select">
+            <!-- <div class="custom-select-trigger">Select an option</div> -->
+            <div class="custom-options">
+        
+              <div class="custom-option group">
+                <img src="./assets/close_icon.png" alt="Закрыть" class="icon-close" />
+                <img src="./assets/deco_icon.png" alt="" class="icon-deco" />
+                <p class="location-title">Локация 1</p>
+                <p class="location-number">512</p>
+                <div class="control-button">
+                  <img src="./assets/change_icon.png" alt="Редактировать" class="icon-change" />
+                  <p class="btn-text">Редактировать</p>
+                </div>
+                <div class="control-button">
+                  <img src="./assets/delete_icon.png" alt="Удалить" class="icon-delete" />
+                  <p class="btn-text">Удалить</p>
+                </div>
+              </div>
+        
+              <div class="custom-option nested" data-value="first">
+                <img src="./assets/open_icon.png" alt="Закрыть" class="icon-open" />
+                <img src="./assets/deco_icon.png" alt="" class="icon-deco" />
+                <p class="subdivision-title">Подотдел 1</p>
+                <p class="subdivision-number">10</p>
+                <p class="purpose">Для утерь</p>
+              </div>
+        
+              <div class="custom-option nested" data-value="second">
+                <img src="./assets/close_icon.png" alt="Закрыть" class="icon-close" />
+                <img src="./assets/deco_icon.png" alt="" class="icon-deco" />
+                <p class="subdivision-title">Подотдел 2</p>
+                <p class="subdivision-number">100</p>
+                <div class="nested-subdivision">
+                  <img src="./assets/deco_icon.png" alt="" class="icon-deco" />
+                  <p class="nested-subdivision-title">Подподотдел 1</p>
+                  <p class="nested-subdivision-number">2</p>
+                  <p class="type">Виртуальная</p>
+                  <p class="barcode-status">Без штрихкода</p>
+                </div>
+              </div>
+        
+              <div class="custom-option nested" data-value="third">
+                <img src="./assets/open_icon.png" alt="Закрыть" class="icon-open" />
+                <img src="./assets/deco_icon.png" alt="" class="icon-deco" />
+                <p class="subdivision-title">Подотдел 3</p>
+                <p class="subdivision-number">400</p>
+              </div>
+        
+              <div class="custom-option group">
+                <img src="./assets/open_icon.png" alt="Закрыть" class="icon-open" />
+                <img src="./assets/deco_icon.png" alt="" class="icon-deco" />
+                <p class="location-title">Локация 2</p>
+                <p class="location-number">100</p>
+              </div>
+        
+              <div class="custom-option group">
+                <img src="./assets/open_icon.png" alt="Закрыть" class="icon-open" />
+                <img src="./assets/deco_icon.png" alt="" class="icon-deco" />
+                <p class="location-title">Локация 3</p>
+                <p class="location-number">100</p>
+              </div>
+        
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- Footer Section -->
+    <footer class="footer">
+      <p class="footer__content">
+        Последний приём 20.09.2021 18:36:21
+      </p>
+      <p class="footer__content">
+        Последняя передача  20.09.2021 18:38:21
+      </p>
+    </footer>
+
+    <script type="module" src="./index.js"></script>
+  </body>
+</html>
