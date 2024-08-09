@@ -1,3 +1,6 @@
+/**
+ * Dispalys the localisation section initially
+ */
 export function initSidebarMenu() {
   const sidebarLinks = document.querySelectorAll(".sidebar__link");
   const contentSections = document.querySelectorAll(".main-content > section");
@@ -15,14 +18,18 @@ export function initSidebarMenu() {
       section.classList.add("active");
       section.style.display = "flex";
       section.style.flexDirection = "column";
-      section.style.flexGrow="1"
+      section.style.flexGrow = "1";
     } else {
       section.classList.remove("active");
       section.style.display = "none";
     }
   });
 }
-
+/**
+ * Dispalys the sections (localisation or settings) while
+ * navigate between the sidebar's link
+ * @param {*} targetLink the data-content of sidebar's link
+ */
 function updateDisplayedContent(targetLink) {
   const contentId = targetLink.dataset.content;
   const contentSections = document.querySelectorAll(".main-content > section");
@@ -34,7 +41,7 @@ function updateDisplayedContent(targetLink) {
       section.classList.add("active");
       section.style.display = "flex";
       section.style.flexDirection = "column";
-      section.style.flexGrow="1"
+      section.style.flexGrow = "1";
     } else {
       section.classList.remove("active");
       section.style.display = "none";

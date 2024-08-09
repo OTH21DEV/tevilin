@@ -3,18 +3,17 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="Тестовый лендинг для Международного васюкинского турнира по шахматам." />
+    <meta name="description" content="Тестовый лендинг" />
     <title>Тестовый лендинг</title>
     <link rel="stylesheet" href="./styles/style.css" />
-
-    <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon-32x32.png" />
-    <link rel="icon" type="image/png" sizes="16x16" href="./assets/favicon-16x16.png" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-   
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Galdeano&family=Golos+Text:wght@400..900&family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Galdeano&family=Golos+Text:wght@400..900&family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
     <link
       href="https://fonts.googleapis.com/css2?family=Golos+Text:wght@400..900&family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
       rel="stylesheet"
@@ -48,7 +47,7 @@
             <a class="sidebar__link" href="#" data-content="localisation"> <img src="./assets/map_icon.png" class="sidebar__icon" alt="Локации" /> Локации </a>
           </li>
           <li class="sidebar__item">
-            <a class="sidebar__link" href="#" data-content="settings"> <img src="./assets/settings_icon.png" class="sidebar__icon" alt="Настройки" /> Настройки </a>
+            <a class="sidebar__link" href="#" data-content="settings"> <img src="./assets/settings_icon.png" class="sidebar__icon" alt="Настройки" id="settings__icon" /> Настройки </a>
           </li>
         </ul>
         <div class="sidebar__toggle">
@@ -79,120 +78,111 @@
             Создать локацию
           </button>
 
- <!-- Popup create -->
- <div class="localisation__overlay" id="popupOverlay"></div>
- <div class="localisation__popup" id="popup">
-   <h2>Создать локацию</h2>
-   <form id="popupForm">
-     <div class="form-group">
-       <label for="input1"></label>
-       <input type="text" id="input1" name="input1" placeholder="Название">
-     </div>
-     <div class="form-group">
-       <label for="input2"></label>
-       <input type="text" id="input2" name="input2" placeholder="Штрихкод">
-     </div>
-     <div class="form-group">
-       <label for="input3"></label>
-       <input type="text" id="input3" name="input3" placeholder="RFID">
-     </div>
-     <div class="form-group">
-       <label for="input4"></label>
-       <input type="text" id="input4" name="input4"placeholder="Вложенность">
-     </div>
- <!-- Nested elements in input -->
+          <!-- Popup create -->
+          <div class="localisation__overlay" id="popupOverlay"></div>
+          <div class="localisation__popup" id="popup">
+            <h2>Создать локацию</h2>
+            <form id="popupForm">
+              <div class="form-group">
+                <label for="input1"></label>
+                <input type="text" id="input1" name="input1" placeholder="Название" />
+              </div>
+              <div class="form-group">
+                <label for="input2"></label>
+                <input type="text" id="input2" name="input2" placeholder="Штрихкод" />
+              </div>
+              <div class="form-group">
+                <label for="input3"></label>
+                <input type="text" id="input3" name="input3" placeholder="RFID" />
+              </div>
+              <div class="form-group">
+                <label for="input4"></label>
+                <input type="text" id="input4" name="input4" placeholder="Вложенность" />
+              </div>
+              <!-- Nested elements in input -->
 
- <div class="dropdown-content" id="dropdownContent">
-  <!-- Main Options -->
-  <div class="dropdown-item">
-    Подотдел 1
-    <div class="sub-dropdown-content">
-      <div class="sub-dropdown-item">Подподотдел 1</div>
-    </div>
-  </div>
-  <div class="dropdown-item">Подотдел 2</div>
-  <div class="dropdown-item">Подотдел 3</div>
-</div>
+              <div class="dropdown-content" id="dropdownContent">
+                <!-- Main Options -->
+                <div class="dropdown-item">
+                  Подотдел 1
+                  <div class="sub-dropdown-content">
+                    <div class="sub-dropdown-item">Подподотдел 1</div>
+                  </div>
+                </div>
+                <div class="dropdown-item">Подотдел 2</div>
+                <div class="dropdown-item">Подотдел 3</div>
+              </div>
 
+              <div class="form-group">
+                <label class="custom-radio"
+                  >Виртуальная локация
+                  <span class="checkmark"></span>
+                  <input type="radio" id="option1" name="option" value="Option 1" />
+                </label>
+                <label class="custom-radio option2"
+                  >Локация для утерь
+                  <span class="checkmark"></span>
+                  <input type="radio" id="option2" name="option" value="Option 2" />
+                </label>
+              </div>
 
- 
+              <div class="form-group controls">
+                <button type="button" id="submitPopup" class="btn btn-popup-create">
+                  <img src="./assets/save_icon.png" alt="" />
+                  Создать
+                </button>
+                <button type="button" id="cancelPopup" class="btn btn-popup-cancel">Отменить</button>
+              </div>
+            </form>
+          </div>
 
+          <!-- Popup modify -->
+          <div class="localisation__popup" id="modifyPopup">
+            <h2 id="modifyPopup-title"></h2>
+            <form id="modifyPopupForm">
+              <div class="form-group">
+                <label for="input5">Название</label>
+                <input type="text" id="input5" name="input5" placeholder="Название" />
+              </div>
+              <div class="form-group">
+                <label for="input6">Штрихкод</label>
+                <input type="text" id="input6" name="input6" placeholder="Штрихкод" />
+              </div>
+              <div class="form-group">
+                <label for="input7">RFID</label>
+                <input type="text" id="input7" name="input7" placeholder="RFID" />
+              </div>
+              <div class="form-group">
+                <label for="input8">Вложенность</label>
+                <input type="text" id="input8" name="input8" placeholder="Вложенность" />
+              </div>
 
+              <div class="form-group test">
+                <label class="custom-radio style"
+                  >Виртуальная локация
+                  <span class="checkmark"></span>
+                  <input type="radio" id="option3" name="option" value="Option 3" />
+                </label>
+                <label class="custom-radio style"
+                  >Локация для утерь
+                  <span class="checkmark"></span>
+                  <input type="radio" id="option4" name="option" value="Option 4" />
+                </label>
+              </div>
 
-
-     <div class="form-group">
-      <label class="custom-radio">Виртуальная локация
-        <span class="checkmark"></span>
-        <input type="radio" id="option1" name="option" value="Option 1">
-        
-      </label>
-      <label class="custom-radio option2">Локация для утерь
-        <span class="checkmark"></span>
-        <input type="radio" id="option2" name="option" value="Option 2">
-      </label>
-   </div>
-
-   
-     <div class="form-group controls">
-       <button type="button" id="submitPopup" class="btn btn-popup-create">
-        <img src="./assets/save_icon.png" alt="" />
-        Создать</button>
-       <button type="button" id="cancelPopup" class="btn btn-popup-cancel">Отменить</button>
-     </div>
-   </form>
- </div>
-
-
-
- <!-- Popup modify -->
- <div class="localisation__popup" id="modifyPopup">
-  <h2 id="modifyPopup-title"></h2>
-  <form id="modifyPopupForm">
-    <div class="form-group">
-      <label for="input5">Название</label>
-      <input type="text" id="input5" name="input5" placeholder="Название">
-    </div>
-    <div class="form-group">
-      <label for="input6">Штрихкод</label>
-      <input type="text" id="input6" name="input6" placeholder="Штрихкод">
-    </div>
-    <div class="form-group">
-      <label for="input7">RFID</label>
-      <input type="text" id="input7" name="input7" placeholder="RFID">
-    </div>
-    <div class="form-group">
-      <label for="input8">Вложенность</label>
-      <input type="text" id="input8" name="input8" placeholder="Вложенность">
-    </div>
-
-    <div class="form-group test">
-      <label class="custom-radio style">Виртуальная локация
-        <span class="checkmark"></span>
-        <input type="radio" id="option3" name="option" value="Option 3">
-      </label>
-      <label class="custom-radio style">Локация для утерь
-        <span class="checkmark"></span>
-        <input type="radio" id="option4" name="option" value="Option 4">
-      </label>
-    </div>
-
-    <div class="form-group modify">
-      <button type="button" id="submitModifyPopup" class="btn btn-popup-modify-cancel">
-        <img src="./assets/remove_icon.png" alt="" />
-        Удалить
-      </button>
-      <button type="button" id="cancelModifyPopup" class="btn btn-popup-cancel">Отменить</button>
-    </div>
-    <button type="button" id="saveModifyPopup" class="btn btn-popup-modify-save">
-      <img src="./assets/save_icon.png" alt="" />
-      Сохранить
-    </button>
-  </form>
-</div>
-
-
-
-
+              <div class="form-group modify">
+                <button type="button" id="submitModifyPopup" class="btn btn-popup-modify-cancel">
+                  <img src="./assets/remove_icon.png" alt="" />
+                  Удалить
+                </button>
+                <button type="button" id="cancelModifyPopup" class="btn btn-popup-cancel">Отменить</button>
+              </div>
+              <button type="button" id="saveModifyPopup" class="btn btn-popup-modify-save">
+                <img src="./assets/save_icon.png" alt="" />
+                Сохранить
+              </button>
+            </form>
+          </div>
 
           <div class="localisation__search">
             <div class="localisation__search-option">
@@ -214,11 +204,11 @@
                 <p class="location-number">512</p>
                 <div class="control-button">
                   <img src="./assets/change_icon.png" alt="Редактировать" class="icon-change" />
-                  <p class="btn-text" >Редактировать</p>
+                  <p class="btn-text">Редактировать</p>
                 </div>
                 <div class="control-button">
                   <img src="./assets/delete_icon.png" alt="Удалить" class="icon-delete" />
-                  <p class="btn-text" >Удалить</p>
+                  <p class="btn-text">Удалить</p>
                 </div>
               </div>
 
@@ -281,11 +271,11 @@
           <li class="settings__item">Справочники</li>
           <li class="settings__item">Пользователь</li>
         </ul>
-        <h2 class="settings__subheading__title" >Настройка полей таблицы</h2>
+        <h2 class="settings__subheading__title">Настройка полей таблицы</h2>
         <!-- Table -->
 
         <table class="settings__table">
-          <thead class="settings__table-head ">
+          <thead class="settings__table-head">
             <tr class="settings__table-row" id="thead">
               <th class="settings__table-cell settings__table-cell--header-empty"></th>
               <th class="settings__table-cell settings__table-cell--description">Описание</th>

@@ -170,11 +170,11 @@ Localisation section
 .settings__separator {
   font-family: var(--heading-font-bold);
   font-weight: var(--font-weight-light);
-  color: --heading-text-color;
+  color: var(--heading-text-color);
   display: inline-block;
-  transform: rotate(18deg);
-  padding: 0 15px;
-  font-size: 50px;
+  /* transform: rotate(18deg); */
+  padding: 0 8px;
+  font-size: 32px;
 }
 
 .localisation__menu,
@@ -473,7 +473,7 @@ Nested elements in input4
   position: absolute;
   left: 100%;
   top: 0;
-  background-color:  var(--popup-input-bg);
+  background-color: var(--popup-input-bg);
   min-width: 160px;
   box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
   z-index: 1;
@@ -497,7 +497,6 @@ Nested elements in input4
 .sub-dropdown-item:hover {
   background-color: #ddd;
 }
-
 
 /* 
 Radio buttons 
@@ -648,7 +647,7 @@ Custom dropdown Section
 .nested-subdivision {
   width: 100%;
   display: flex;
-  margin: 18px 0 0 64px;
+  margin: 18px 0 0 44px;
 }
 
 .custom-select-wrapper .custom-options .custom-option.group:nth-last-of-type(2) {
@@ -842,6 +841,7 @@ Table
 .settings__table-cell--help-icon-1 img {
   width: 24px;
   height: 24px;
+  margin-left: 2px;
 }
 
 .settings__table-cell--field-type-3 img,
@@ -870,15 +870,45 @@ Table
   height: 60px;
 }
 
-.settings__table-cell:first-child {
+.settings__table {
+  width: 100%;
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+.settings__table-cell--name,
+.settings__table-cell--mol,
+.settings__table-cell--color,
+.settings__table-cell--quantity,
+.settings__table-cell--quantity-2,
+.settings__table-cell--delete-1,
+.settings__table-cell--delete-3,
+.settings__table-cell--delete-5,
+.settings__table-cell--delete-7,
+.settings__table-cell--delete-9 {
+  border: 1px solid var(--secondary-bg);
+  position: relative;
+  background-color: transparent;
+  z-index: 1;
+  box-shadow: 0 0 0 1px var(--secondary-bg);
+}
+.settings__table-cell--name,
+.settings__table-cell--mol,
+.settings__table-cell--color,
+.settings__table-cell--quantity,
+.settings__table-cell--quantity-2 {
   border-top-left-radius: 5px;
   border-bottom-left-radius: 5px;
 }
-
-.settings__table-cell:last-child {
+.settings__table-cell--delete-1,
+.settings__table-cell--delete-3,
+.settings__table-cell--delete-5,
+.settings__table-cell--delete-7,
+.settings__table-cell--delete-9 {
   border-top-right-radius: 5px;
   border-bottom-right-radius: 5px;
 }
+
 .settings__table-head {
   height: auto;
 }

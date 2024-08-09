@@ -1,6 +1,8 @@
+/**
+ * Displays popups
+ */
 export function displayPopup() {
   const openPopupButton = document.querySelector(".btn.btn-create");
-
   const cancelPopupButton = document.getElementById("cancelPopup");
   const submitPopupButton = document.getElementById("submitPopup");
   const popup = document.getElementById("popup");
@@ -81,7 +83,9 @@ export function displayPopup() {
 
   displayNestedElements();
 }
-
+/**
+ * Dispalys the nested elements in input field
+ */
 function displayNestedElements() {
   const input4 = document.getElementById("input4");
   const dropdownContent = document.getElementById("dropdownContent");
@@ -94,7 +98,6 @@ function displayNestedElements() {
     }
   });
 
-
   document.addEventListener("click", (event) => {
     if (!event.target.matches("#input4") && !event.target.closest(".dropdown-content")) {
       dropdownContent.style.display = "none";
@@ -103,8 +106,8 @@ function displayNestedElements() {
 
   dropdownContent.addEventListener("click", (event) => {
     if (event.target.classList.contains("dropdown-item") || event.target.classList.contains("sub-dropdown-item")) {
-      input4.value = event.target.textContent.trim(); 
-      dropdownContent.style.display = "none"; 
+      input4.value = event.target.textContent.trim();
+      dropdownContent.style.display = "none";
     }
   });
 }
