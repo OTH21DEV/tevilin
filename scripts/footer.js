@@ -52,7 +52,7 @@ export function displayFooter() {
       otherContainer.innerHTML = `
             <button class="btn btn-save-footer">
               <img src="./assets/save_icon.png" alt="" />
-              Добавить поле
+              Сохранить
             </button>
             <button class="btn btn-cancel-footer">
               Отменить
