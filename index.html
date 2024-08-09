@@ -100,6 +100,25 @@
        <label for="input4"></label>
        <input type="text" id="input4" name="input4"placeholder="Вложенность">
      </div>
+ <!-- Nested elements in input -->
+
+ <div class="dropdown-content" id="dropdownContent">
+  <!-- Main Options -->
+  <div class="dropdown-item">
+    Подотдел 1
+    <div class="sub-dropdown-content">
+      <div class="sub-dropdown-item">Подподотдел 1</div>
+    </div>
+  </div>
+  <div class="dropdown-item">Подотдел 2</div>
+  <div class="dropdown-item">Подотдел 3</div>
+</div>
+
+
+ 
+
+
+
 
      <div class="form-group">
       <label class="custom-radio">Виртуальная локация
@@ -127,7 +146,7 @@
 
  <!-- Popup modify -->
  <div class="localisation__popup" id="modifyPopup">
-  <h2>Изменить локацию</h2>
+  <h2 id="modifyPopup-title"></h2>
   <form id="modifyPopupForm">
     <div class="form-group">
       <label for="input5">Название</label>

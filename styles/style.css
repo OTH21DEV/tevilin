@@ -437,7 +437,67 @@ Popup Form
   background-repeat: no-repeat;
   background-size: 10px 7px;
   background-position: right 31px center;
+  position: relative;
 }
+
+/*
+Nested elements in input4 
+*/
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: var(--popup-input-bg);
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+
+.dropdown-item {
+  font-family: var(--tertiary-font);
+  font-weight: var(--font-weight-light);
+  font-size: var(--font-size-m);
+  color: var(--tertiary-text-color);
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  position: relative;
+}
+
+.dropdown-item:hover {
+  background-color: #ddd;
+}
+
+.sub-dropdown-content {
+  display: none;
+  position: absolute;
+  left: 100%;
+  top: 0;
+  background-color:  var(--popup-input-bg);
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+
+.dropdown-item:hover .sub-dropdown-content {
+  display: block;
+}
+
+.sub-dropdown-item {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  font-family: var(--tertiary-font);
+  font-weight: var(--font-weight-light);
+  font-size: var(--font-size-m);
+  color: var(--tertiary-text-color);
+}
+
+.sub-dropdown-item:hover {
+  background-color: #ddd;
+}
+
 
 /* 
 Radio buttons 
@@ -503,11 +563,9 @@ Custom checkmark
 }
 .controls {
   display: flex;
-
   position: absolute;
   bottom: 5px;
 }
-
 
 /*
 Custom dropdown Section
