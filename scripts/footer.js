@@ -46,7 +46,7 @@ export function displayFooter() {
       iconSettings.style.filter = "brightness(0) invert(1)";
       otherContainer.classList.add("footer__section");
       footer.style.justifyContent = "start";
-      footer.style.paddingLeft = "337px";
+      footer.style.paddingLeft = "340px";
       document.querySelector(".main-content").style.height = "";
       document.querySelector(".main-content").style.minHeight = "";
       otherContainer.innerHTML = `
